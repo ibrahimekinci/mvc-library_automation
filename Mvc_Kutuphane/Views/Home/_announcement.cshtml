@@ -1,0 +1,26 @@
+﻿@model  List<Mvc_Kutuphane.Models.tbl_duyuru>
+
+@{
+    Layout = null;
+}
+
+    <div class="widget">
+        <div class="widget-header">
+            <h3>Duyurular</h3>
+        </div>
+        <div class="widget-body">
+            <div class="widget">
+                @foreach (var item in Model)
+                {
+                    <div class="widget-header">
+                        <h3>@item.ad</h3>
+                    </div>
+                    <div class="widget-body">
+                        <p>@item.aciklama</p>
+                        @*<hr />*@
+                        @*<a href="#"><span class="item-numbers">Devamını Oku</span></a>*@
+                    </div>
+                }
+            </div>
+        </div>
+    </div>

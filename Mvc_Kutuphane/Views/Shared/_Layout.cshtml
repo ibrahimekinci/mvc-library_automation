@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" type="icon/ico" href="~/assets/img/favicon.ico" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Kütüphane</title>
+    <!-- Favicon -->
+    <link href="~/assets/img/favicon.png" rel="icon" type="image/png">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:regular,700,600&latin" type="text/css" />
+    <!-- Essential styles -->
+    <link rel="stylesheet" href="~/assets/bootstrap/css/bootstrap.min.css" type="text/css">
+
+    <link rel="stylesheet" href="~/assets/plugins/font-awesome/css/font-awesome.css">
+
+    <!-- Dlapak styles -->
+    <link id="theme_style" type="text/css" href="~/assets/css/style1.css" rel="stylesheet" media="screen">
+    <!-- Assets -->
+    <link rel="stylesheet" href="~/assets/plugins/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="~/assets/plugins/owl-carousel/owl.theme.css">
+
+    <!-- JS Library -->
+    <script src="~/assets/js/jquery.js"></script>
+    @RenderSection("stil", false)
+</head>
+<body>
+    <div class="wrapper col-xs-12">
+        <header class="navbar navbar-default navbar-fixed-top navbar-top ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="~/Home" class="navbar-brand"><span class="logo"><i class="fa fa-book"></i>@Mvc_Kutuphane.Resources.lang.kutuphane</span></a>
+                </div>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+
+
+                        <li class="new-ads"><a href="~/Account" class="btn btn-ads btn-block">@Mvc_Kutuphane.Resources.lang.yonetim</a> </li>
+                        <li>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+
+
+                        @if (Session["user"] == null)
+                        {
+                            <li><a href="~/Account/signup">@Mvc_Kutuphane.Resources.lang.uyeol</a></li>
+                        }
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown"><strong class="caret"></strong>&nbsp;@Mvc_Kutuphane.Resources.lang.benimsayfam</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="~/Account/FotografYukle">Fotoğraf Yükle</a></li>
+                                <li>
+                                    <a href="~/Account">Profili GÜncelle</a>
+                                </li>
+                                <li>
+                                    <a href="~/Account/sifreyiDegistir">Şifre Değiştir</a>
+                                </li>
+                                @*<li>
+                                    <a href="~/Account/sifreyiDegistir">Adres Bilgileri</a>
+                                </li>
+                                <li>
+                                    <a href="~/Account/Bildirimler">Bildirimler</a>
+                                </li>
+                                <li>
+                                    <a href="~/Account/KitapSepet">Kitap Sepetim</a>
+                                </li>
+                                <li>
+                                    <a href="~/Account/KitapGecmis">Kitap Geçmişim</a>
+                                </li>*@
+                            </ul>
+                        </li>
+                        <li> <a href="~/Home/iletisim">İletişim</a></li>
+                        @if (Session["user"] == null && Session["yetki"] == null)
+                        {
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-user"></i> <strong class="caret"></strong>&nbsp;</a>
+                                <div class="dropdown-menu dropdown-login" style="padding:15px;min-width:250px">
+
+                                    @using (Html.BeginForm("login", "Account"))
+                                    { 
+                                        <div class="form-group">
+                                            <div class="input-group">
+                                                @*@{
+                                                    string kadi = "";
+                                                    if (Request.Cookies["user"]["sifre"] != null)
+                                                        kadi = Request.Cookies["user"]["sifre"];
+                                                        }*@
+                                                <span class="input-group-addon addon-login"><i class="fa fa-user"></i></span>
+                                                <input type="text" name="kadi" placeholder="@Mvc_Kutuphane.Resources.lang.kullaniciadimail" required="required" class="form-control input-login">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="input-group">
+
+                                                <span class="input-group-addon addon-login"><i class="addon fa fa-lock"></i></span>
+
+                                                <input type="password" name="sifre" placeholder="@Mvc_Kutuphane.Resources.lang.sifre" required="required" class="form-control input-login">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="checkbox">
+                                                <label class="string optional" for="user_remember_me">
+                                                    <input type="checkbox" id="beniHatirla" checked>
+                                                    @Mvc_Kutuphane.Resources.lang.benihatirla
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="submit" class="btn btn-custom btn-block" value="@Mvc_Kutuphane.Resources.lang.giriş">
+                                    }
+
+                                </div>
+                            </li>
+                        }
+
+                        else
+                        {
+                            <li>
+                                <a href='@Url.Action("signout","Account")' class="btn btn-sm"><i class="fa fa-sign-out"></i> Çıkış Yap</a>
+                            </li>
+                        }
+
+
+
+
+
+                        <a href='@Url.Action("ChangeCulture", "Home", new { lang = "en", returnurl = this.Request.RawUrl }, null)'>
+                            <img src="~/assets/img/icon/United Kingdom_256.png" height="24" width="24" style="float:left;" />
+                        </a>
+                        <a href='@Url.Action("ChangeCulture", "Home", new { lang = "tr", returnUrl = this.Request.RawUrl }, null)'>
+
+                            <img src="~/assets/img/icon/Turkey_256.png" height="24" width="24" style="float:left;" />
+                        </a>
+
+                        @*@Html.ActionLink("English", "ChangeCulture", "Home", new { lang = "en", returnurl = this.Request.RawUrl }, null)
+                            @Html.ActionLink("Türkçe", "ChangeCulture", "Home", new { lang = "tr", returnUrl = this.Request.RawUrl }, null)*@
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            @RenderBody()
+        </div>
+
+        <div class="row">
+            <div class="footer">
+                <div class="container">
+                    <ul class="footer-menu">
+                        <li>
+                            <a href="~/Home"> Anasayfa </a>
+                            <a href="~/Home/iletisim">İletişim</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-menu">
+                        <li> &copy; 2015 ibrahim Ekinci & Can Ozan Ataman </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Essentials -->
+        <script src="~/assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="~/assets/plugins/owl-carousel/owl.carousel.js"></script>
+        <script src="~/assets/plugins/counter/jquery.countTo.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                // ===========Featured Owl Carousel============
+                if ($(".owl-carousel-featured").length > 0) {
+                    $(".owl-carousel-featured").owlCarousel({
+                        items: 3,
+                        lazyLoad: true,
+                        pagination: true,
+                        autoPlay: 5000,
+                        stopOnHover: true
+                    });
+                }
+
+                // ==================Counter====================
+                $('.item-count').countTo({
+                    formatter: function (value, options) {
+                        return value.toFixed(options.decimals);
+                    },
+                    onUpdate: function (value) {
+                        console.debug(this);
+                    },
+                    onComplete: function (value) {
+                        console.debug(this);
+                    }
+                });
+            });
+        </script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-68907527-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+    </div>
+    @RenderSection("script", false)
+</body>
+</html>

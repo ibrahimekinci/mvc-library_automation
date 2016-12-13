@@ -1,0 +1,124 @@
+﻿@model Mvc_Kutuphane.Models.tbl_kitap
+@{
+    ViewBag.Title = "Kitap";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+
+
+
+
+
+
+
+
+@using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "gelenSonuc", InsertionMode = InsertionMode.Replace }))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.ValidationSummary()
+    <div class="form-group">
+        @Html.TextBoxFor(m => m.ad, new { @class = "form-control input-lg", @placeholder = "Kitap Adı" })
+    </div>
+    <div class="form-group">
+        @Html.TextBoxFor(m => m.detay, new { @class = "form-control input-lg", @placeholder = "Kitap Detayı" })
+    </div>
+
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.kitapTurID, "Kitap Türü", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("kitapTurID", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.kitapTurID, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.yazarID, "Yazarlar", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownList("yazarID", null, htmlAttributes: new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.yazarID, "", new { @class = "text-danger" })
+        </div>
+    </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.yayinEviID, "Yayın Evi", htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.DropDownList("yayinEviID", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.yayinEviID, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-block btn-custom">Kaydet</button>
+            </div>
+
+}
+
+<div id="gelenSonuc">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<table class="table">
+    <tr>
+
+        <th>
+            <center> Adı</center>
+        </th>
+        <th>
+            <center>  Kitap Türü</center>
+        </th>
+        <th>
+            <center> Yayın Evi</center>
+        </th>
+        <th>
+            <center> Yazarı</center>
+        </th>
+
+        <th>
+            <center>  Detaylar</center>
+        </th>
+        <th>
+            <center>  Resmi</center>
+        </th>
+
+    </tr>
+
+    @foreach (Mvc_Kutuphane.Models.tbl_kitap item in ViewBag.Basar)
+            {
+        <tr>
+            <td>
+                <center>   @Html.DisplayFor(modelItem => item.ad)</center>
+            </td>
+            <td>
+                <center>  @Html.DisplayFor(modelItem => item.kitapTur.ad)</center>
+            </td>
+            <td>
+                <center> @Html.DisplayFor(modelItem => item.yayinEvi.ad)</center>
+            </td>
+            <td>
+                <center> @Html.DisplayFor(modelItem => item.yazar.ad)</center>
+            </td>
+
+            <td>
+                <center>  @Html.DisplayFor(modelItem => item.detay)</center>
+            </td>
+            <td>
+                <center> <img src="@Html.DisplayFor(modelItem => item.resimUrl)" width="64" height="79"> </center>
+            </td>
+
+        </tr>
+    }
+
+
+</table>
+
+

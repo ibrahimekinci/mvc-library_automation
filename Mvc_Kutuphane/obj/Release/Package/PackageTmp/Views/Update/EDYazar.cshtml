@@ -1,0 +1,73 @@
+﻿@model Mvc_Kutuphane.Models.tbl_yazar
+
+@{
+    Layout = null;
+}
+@{
+    ViewBag.Title = "Yayınevi";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+@using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "gelenSonuc", InsertionMode = InsertionMode.Replace }))
+{ }
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+           <center><h3>Yazar Düzenlememek Üzeresiniz Bu İşlemden Eminmisiniz?</h3></center>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            @Html.HiddenFor(model => model.ID)
+
+            <div class="form-group">
+               Yazar Adı
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.ad, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ad, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                Yazar Soyadı
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.soyad, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.soyad, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+              Doğum Tarihi
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.dogumTarihi, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.dogumTarihi, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+               
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.kayitTarihi, new { htmlAttributes = new { style = "display:none;", @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.kayitTarihi, "", new { style = "display:none;", @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group">
+                
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.ekleyenID, new { htmlAttributes = new { style = "display:none;", @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ekleyenID, "", new { style = "display:none;", @class = "text-danger" })
+                </div>
+            </div>
+
+
+            <div class="form-group">
+               
+                    <input type="submit" value="Kaydet" class="btn btn-default" />
+                </div>
+            </div>
+       
+    }
+
+    <div>
+        @Html.ActionLink("Düzenle Sayfasına Geri Dön", "Yazar")
+    </div>

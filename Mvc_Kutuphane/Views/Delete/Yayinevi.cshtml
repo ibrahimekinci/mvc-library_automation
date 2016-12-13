@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Mvc_Kutuphane.Models.tbl_yayinEvi>
+
+@{
+    Layout = null;
+}
+@{
+    ViewBag.Title = "Yayınevi";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+@using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "gelenSonuc", InsertionMode = InsertionMode.Replace }))
+{ }
+<center>
+    <h3>Aşağıda Eklenen Tüm Yayın Evlerini Göremektesiniz</h3>
+</center>
+    <table class="table">
+        <tr>
+            <th>
+                <center>   Adı</center>
+            </th>
+            <th>
+                <center> @Html.DisplayNameFor(model => model.aciklama)</center>
+            </th>
+            <th>
+                <center> @Html.DisplayNameFor(model => model.detay)</center>
+            </th>
+            <th>
+                <center>  Resim</center>
+            </th>
+            <th>
+                <center> @Html.DisplayNameFor(model => model.kayitTarihi)</center>
+            </th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <center>  @Html.DisplayFor(modelItem => item.ad)</center>
+                </td>
+                <td>
+                    <center> @Html.DisplayFor(modelItem => item.aciklama)</center>
+                </td>
+                <td>
+                    <center>  @Html.DisplayFor(modelItem => item.detay)</center>
+                </td>
+                <td>
+                    <center><img src="@Html.DisplayFor(modelItem => item.resimUrl)" width="64" height="79"> </center>
+                </td>
+                <td>
+                    <center> @Html.DisplayFor(modelItem => item.kayitTarihi)</center>
+                </td>
+
+                <td>
+                    <font face="Tahoma" size="5" color="red">   @Html.ActionLink("Sil", "DElYayinevi", new { id = item.ID })</font><br />
+
+
+
+                </td>
+            </tr>
+        }
+
+    </table>

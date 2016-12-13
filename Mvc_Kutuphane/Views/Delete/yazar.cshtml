@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Mvc_Kutuphane.Models.tbl_yazar>
+@{
+    Layout = null;
+}
+@{
+    ViewBag.Title = "Yazar";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+@using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "gelenSonuc", InsertionMode = InsertionMode.Replace }))
+{ }
+
+
+  
+    <table class="table">
+        <tr>
+            <th>
+                <center>  Adı</center>
+            </th>
+            <th>
+                <center> Soy Adı</center>
+            </th>
+            <th>
+                <center>  Doğum Tarihi</center>
+            </th>
+
+            <th></th>
+        </tr>
+        
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <center> @Html.DisplayFor(modelItem => item.ad)</center>
+</td>
+                <td>
+                    <center> @Html.DisplayFor(modelItem => item.soyad)</center>
+</td>
+                <td>
+                    <center> @Html.DisplayFor(modelItem => item.dogumTarihi)</center>
+</td>
+                
+                <td>
+                   
+                    @Html.ActionLink("Sil", "DelYazar", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>

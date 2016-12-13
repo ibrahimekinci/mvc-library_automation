@@ -1,0 +1,89 @@
+﻿@model Mvc_Kutuphane.Models.tbl_kitap
+@{
+    Layout = null;
+}
+
+@{
+    ViewBag.Title = "Kitap";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+
+@using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "gelenSonuc", InsertionMode = InsertionMode.Replace }))
+{ }
+
+    <h3>Şuanda Bir Kitap Silme İşlemi Gerçekleştiriyorsunuz Eminmisiniz?</h3>
+    <div>
+       
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+            Kitap Adı
+            </dt>
+
+            <dd>
+          <center>      @Html.DisplayFor(model => model.ad)</center>
+            </dd>
+            
+            
+            
+            
+            
+            
+             <dt>
+                Kitap Türü
+            </dt>
+
+            <dd>
+                <center>  @Html.DisplayFor(model => model.kitapTur.ad)</center>
+</dd>
+
+            <dt>
+                Yayın Evi
+            </dt>
+
+            <dd>
+                <center> @Html.DisplayFor(model => model.yayinEvi.ad)</center>
+</dd>
+
+            <dt>
+               Yazarı
+            </dt>
+
+            <dd>
+                <center>   @Html.DisplayFor(model => model.yazar.ad)</center>
+</dd>
+
+            
+
+            <dt>
+                Detaylar
+            </dt>
+
+            <dd>
+                <center> @Html.DisplayFor(model => model.detay)</center>
+</dd>
+
+            <dt>
+                Resim
+            </dt>
+
+            <dd>
+                <center>  <img src=" @Html.DisplayFor(model => model.resimUrl)" width="64" height="79"></center>
+</dd>
+
+          
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="sil" class="btn btn-default" /> |
+                @Html.ActionLink("Kitap Sil Sayfasına Dön", "Kitap")
+            </div>
+        }
+    </div>
+

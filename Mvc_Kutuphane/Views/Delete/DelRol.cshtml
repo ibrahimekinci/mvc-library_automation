@@ -1,0 +1,53 @@
+﻿@model Mvc_Kutuphane.Models.tbl_rol
+
+@{
+    ViewBag.Title = "Rol";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+@using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "gelenSonuc", InsertionMode = InsertionMode.Replace }))
+{ }
+
+    <center><h3>Rol Silmek Üzeresiniz Bu işlemden Eminmisiniz?</h3></center>
+    <div>
+       
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.ad)
+            </dt>
+
+            <dd>
+                <center>  @Html.DisplayFor(model => model.ad)</center>
+</dd>
+
+            <dt>
+              Resim
+            </dt>
+
+            <dd>
+                <center> <img src="@Html.DisplayFor(model => model.resimUrl)" width="64" height="79"> </center>
+</dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.kayitTarihi)
+            </dt>
+
+            <dd>
+                <center>@Html.DisplayFor(model => model.kayitTarihi)</center>
+</dd>
+
+     
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Sil" class="btn btn-default" /> |
+                @Html.ActionLink("Rol Silme Sayfasına Dönmek İçin Tıklayın", "Rol()")
+            </div>
+        }
+    </div>
+

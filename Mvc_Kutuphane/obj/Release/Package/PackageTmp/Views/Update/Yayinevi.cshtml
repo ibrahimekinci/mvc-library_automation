@@ -1,0 +1,67 @@
+﻿@model IEnumerable<Mvc_Kutuphane.Models.tbl_yayinEvi>
+
+@{
+    Layout = null;
+}
+@{
+    ViewBag.Title = "Yayınevi";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+@using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "gelenSonuc", InsertionMode = InsertionMode.Replace }))
+{ }
+
+    <table class="table">
+        <tr>
+
+            <th>
+                <center>   Adı</center>
+</th>
+            <th>
+            <center> @Html.DisplayNameFor(model => model.aciklama)</center>
+            </th>
+            <th>
+                <center>  @Html.DisplayNameFor(model => model.detay)</center>
+</th>
+            <th>
+                <center> Resim</center>
+</th>
+
+            <th>
+                <center> @Html.DisplayNameFor(model => model.guncellemeTarihi)</center>
+</th>
+
+            <th></th>
+
+        </tr>
+
+        @foreach (var item in Model)
+        {
+<tr>
+    <td>
+        <center> @Html.DisplayFor(modelItem => item.ad)</center>
+</td>
+    <td>
+        <center> @Html.DisplayFor(modelItem => item.aciklama)</center>
+</td>
+    <td>
+        <center>  @Html.DisplayFor(modelItem => item.detay)</center>
+</td>
+    <td>
+        <center> <img src="@Html.DisplayFor(modelItem => item.resimUrl)" width="64" height="79">
+ </center>
+</td>
+
+
+    <td>
+        <center>   @Html.DisplayFor(modelItem => item.guncellemeTarihi)</center>
+</td>
+    
+    <td>
+        @Html.ActionLink("Güncelle", "EDYayinevi", new { id = item.ID }) 
+
+
+    </td>
+</tr>
+    }
+
+</table>

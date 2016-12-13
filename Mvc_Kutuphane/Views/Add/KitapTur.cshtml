@@ -1,0 +1,73 @@
+﻿@model Mvc_Kutuphane.Models.tbl_kitapTur
+@{
+    ViewBag.Title = "Kitap Tür";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+@using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "gelenSonuc", InsertionMode = InsertionMode.Replace }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+    <div class="form-group">
+        @Html.TextBoxFor(m => m.ad, new { @class = "form-control input-lg", @placeholder = "Kitap Türünün Adını Giriniz" })
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-block btn-custom">Kaydet</button>
+    </div>
+}
+<div id="gelenSonuc">
+
+</div>
+<center><h3>Aşağıda Eklenmiş Olan Kitap Türlerini Görmektesiniz</h3></center>
+<table class="table">
+    <tr>
+        <th>
+            <center>Ad</center>
+        </th>
+
+        <th>
+            <center> İcon</center>
+        </th>
+        <th>
+            <center> Resim</center>
+        </th>
+        <th>
+            <center> @Html.DisplayNameFor(model => model.kayitTarihi)</center>
+        </th>
+
+        <th>
+            <center> @Html.DisplayNameFor(model => model.guncellemeTarihi)</center>
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (Mvc_Kutuphane.Models.tbl_kitapTur item in ViewBag.Basar)
+    {
+        <tr>
+            <td>
+                <center> @Html.DisplayFor(modelItem => item.ad)</center>
+            </td>
+
+            <td>
+                <center>
+                    <i class="@item.iconHtml"></i>
+                </center>
+            </td>
+            <td>
+                <center>  <img src="@Html.DisplayFor(modelItem => item.resimUrl)" width="64" height="79"></center>
+            </td>
+            <td>
+                <center>  @Html.DisplayFor(modelItem => item.kayitTarihi)</center>
+            </td>
+            <td>
+                <center> @Html.DisplayFor(modelItem => item.guncellemeTarihi)</center>
+            </td>
+
+
+        </tr>
+    }
+
+
+</table>

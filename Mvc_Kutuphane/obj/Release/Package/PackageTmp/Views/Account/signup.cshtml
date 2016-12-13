@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Üye Ol";
+}
+
+<section class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 login-form">
+                <div class="panel panel-default">
+                    <div class="panel-intro text-center">
+                        <h1 class="logo"><i class="fa fa-recycle"></i> Dlapak</h1>
+                    </div>
+                    <div class="panel-body">
+                        @{Html.RenderAction("_register", "Account");}
+                 
+                    </div>
+                    <div class="panel-footer">
+                        <p class="text-center pull-right"> <a href="~/Account/login"> Zaten bir Hesabınız var mı ? </a> </p>
+                        <div style="clear:both"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

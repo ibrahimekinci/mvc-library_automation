@@ -1,0 +1,36 @@
+﻿@model Mvc_Kutuphane.Models.tbl_kitapSepet
+
+@{
+    Layout = null;
+}
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Kitap Sepeti";
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+
+        <h4>Şuan Kitap Ayırtıyorsunuz Bu İşlemden Eminmisiniz</h4>
+
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-160">
+                <input type="submit" value="Ayırt" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+
+}
+
+<div>
+    <Center>@Html.ActionLink("Kitap Detayları Sayfasına Geri Dön", "kitapDetay")</Center>
+</div>

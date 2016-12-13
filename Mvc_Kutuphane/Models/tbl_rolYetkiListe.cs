@@ -1,0 +1,41 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Web;
+
+namespace Mvc_Kutuphane.Models
+{
+    public class tbl_rolYetkiListe
+    {
+        public int ID { get; set; }
+
+        [Display(Name = "Rol Yetki Liste Ad")]
+        [Required(ErrorMessage = "Lütfen Rol Yetki Liste adı alanını doldurunuz..")]
+        [StringLength(25, MinimumLength = 2, ErrorMessage = "Rol Yetki Liste adı alanına 2 ile 25 arası karakter girilebilir...")]
+        public string ad { get; set; }
+
+        [Display(Name = "Kayıt Tarihi")]
+        [Required]
+        public System.DateTime kayitTarihi { get; set; }
+
+        [Display(Name = "Güncelleme Tarihi")]
+        [Required]
+        public System.DateTime guncellemeTarihi { get; set; }
+
+        [DefaultValue("true")]
+        [Display(Name = "Durum")]
+        public bool durum { get; set; }
+
+        [Required]
+        public int ekleyenID { get; set; }
+        [Required]
+        public int guncelleyenID { get; set; }
+
+        public virtual ICollection<tbl_rolYetki> rolYetki { get; set; }
+
+
+    }
+}

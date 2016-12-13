@@ -1,0 +1,57 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{Html.RenderAction("_banner", "Home");}
+<section class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-8">
+                @{Html.RenderAction("_kitapTur", "Home");}
+                @{Html.RenderAction("_featured", "Home");}
+            </div>
+            <div class="col-md-4 col-sm-4">
+                <div class="widget">
+                    <div class="widget-header">
+                        <h3>Site içi arama</h3>
+                    </div>
+                    <div class="widget-body">
+                        @using (Html.BeginForm("Ara", "Home", FormMethod.Get))
+                        {
+                            <div id="search">
+                                <div class="form-group">
+                                    <input type="text" class="search-text form-control input-lg" name="search" placeholder="search" />
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-block btn-custom">Ara</button>
+                                </div>
+
+                            </div>
+                        }
+                    </div>
+                </div>
+                @if (Session["user"] == null)
+                {
+                    <div class="widget">
+                        <div class="widget-header">
+                            <h3>Üye Ol</h3>
+                        </div>
+                        <div class="widget-body">
+                            @{Html.RenderAction("_register", "Account");}
+                        </div>
+                    </div>
+                                }
+
+                @{Html.RenderAction("_announcement", "Home");}
+
+                @*<div class="banner-widget">
+                        <img src="http://placehold.it/600x275" alt="banner" class="img-responsive">
+                    </div>*@
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@{Html.RenderAction("_counter", "Home");}
+

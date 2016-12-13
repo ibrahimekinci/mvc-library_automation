@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Mvc_Kutuphane.Models.tbl_rol>
+
+@{
+    ViewBag.Title = "Rol";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+@using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "gelenSonuc", InsertionMode = InsertionMode.Replace }))
+{ }
+
+    <table class="table">
+        <tr>
+            <th>
+                <center>   @Html.DisplayNameFor(model => model.ad)</center>
+            </th>
+            <th>
+                <center> Resim</center>
+</th>
+            <th>
+                <center>  @Html.DisplayNameFor(model => model.kayitTarihi)</center>
+</th>
+       
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    <center>    @Html.DisplayFor(modelItem => item.ad)</center>
+</td>
+                <td>
+                    <center> <img src="@Html.DisplayFor(modelItem => item.resimUrl)" width="64" height="79"> </center>
+</td>
+                <td>
+                    <center> @Html.DisplayFor(modelItem => item.kayitTarihi)</center>
+</td>
+             
+                <td>
+                   
+                    @Html.ActionLink("Sil", "DelRol", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
+    </table>
+

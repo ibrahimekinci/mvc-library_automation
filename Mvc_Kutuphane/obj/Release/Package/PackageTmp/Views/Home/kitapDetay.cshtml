@@ -1,0 +1,78 @@
+﻿@model Mvc_Kutuphane.Models.tbl_kitap
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Kitap Detay";
+}
+<br />
+<div class="container">
+    <div class="col-xs-12">
+        <div class="col-xs-12 widget" style="border-radius:15px;">
+            <div class="col-xs-4">
+            </div>
+            <div class="col-xs-4">
+                <img src='@Model.resimUrl' style="height:250px;" />
+            </div>
+        </div>
+        <div class="col-xs-12">
+    <div class="col-xs-3 container">
+
+    </div>
+    <div class="col-xs-9">
+     <br />
+    </div>
+</div>
+      
+        <div class="col-xs-12 widget">
+            <div class="col-xs-3 container">
+                <span>Kitap Adı:</span>
+            </div>
+            <div class="col-xs-9">
+            @Model.ad
+            </div>
+        </div>
+        <div class="col-xs-12 widget">
+            <div class="col-xs-3">
+                <span>Yazar</span>
+            </div>
+            <div class="col-xs-9">
+                @Model.kitapTur.ad
+            </div>
+        </div>
+        <div class="col-xs-12 widget">
+            <div class="col-xs-3">
+                <span>Detay</span>
+            </div>
+            <div class="col-xs-9">
+                @Model.detay
+            </div>
+        </div>
+        <div class="col-xs-12 widget">
+            <div class="col-xs-3">
+                <span>Detay</span>
+            </div>
+            <div class="col-xs-9">
+                @Model.yazar.ad + @Model.yazar.soyad
+            </div>
+        </div>
+        @if (!Model.durum)
+        {
+            <div class="col-xs-12 widget">
+                <div class="col-xs-3">
+                    <span>iade tarihi</span>
+                </div>
+                <div class="col-xs-9">
+                    @Model.iadeTarihi
+                </div>
+            </div>
+        }
+        <div class="col-xs-12 widget">
+            <div class="col-xs-3">
+                <span>Yayınevi adı</span>
+            </div>
+            <div class="col-xs-9">
+                @Model.yayinEvi.ad
+            </div>
+        </div>
+    </div>
+</div>
+<br />

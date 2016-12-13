@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="vt_KutuphaneModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="adres">
+    <Key>
+      <PropertyRef Name="adresID" />
+    </Key>
+    <Property Name="adresID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sehirID" Type="Int32" />
+    <Property Name="ilceID" Type="Int32" />
+    <Property Name="mahalleID" Type="Int32" />
+    <Property Name="aciklama" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_YayinEvleri" Relationship="Self.fk_adresID" FromRole="adres" ToRole="tbl_YayinEvleri" />
+    <NavigationProperty Name="tbl_Kullanicilar" Relationship="Self.fk_adresID2" FromRole="adres" ToRole="tbl_Kullanicilar" />
+  </EntityType>
+  <EntityType Name="ilce">
+    <Key>
+      <PropertyRef Name="ilceID" />
+    </Key>
+    <Property Name="ilceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="sehirID" Type="Int32" />
+    <Property Name="ad" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="sehir" Relationship="Self.FK_ilce_sehir1" FromRole="ilce" ToRole="sehir" />
+    <NavigationProperty Name="mahalle" Relationship="Self.FK_mahalle_ilce1" FromRole="ilce" ToRole="mahalle" />
+  </EntityType>
+  <EntityType Name="mahalle">
+    <Key>
+      <PropertyRef Name="mahalleID" />
+    </Key>
+    <Property Name="mahalleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ilceID" Type="Int32" />
+    <Property Name="ad" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ilce" Relationship="Self.FK_mahalle_ilce1" FromRole="mahalle" ToRole="ilce" />
+  </EntityType>
+  <EntityType Name="sehir">
+    <Key>
+      <PropertyRef Name="sehirID" />
+    </Key>
+    <Property Name="sehirID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="plaka" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ad" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ilce" Relationship="Self.FK_ilce_sehir1" FromRole="sehir" ToRole="ilce" />
+  </EntityType>
+  <EntityType Name="tbl_duyurular">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="detay" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="resimUrl" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="durumu" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_istatislik">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="bilgi" Type="Int32" />
+    <Property Name="resimUrl" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tbl_kitapBilgileri">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kitapID" Type="Int32" Nullable="false" />
+    <Property Name="ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="bilgi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="tbl_Kitaplar" Relationship="Self.fk_kitapID2" FromRole="tbl_kitapBilgileri" ToRole="tbl_Kitaplar" />
+  </EntityType>
+  <EntityType Name="tbl_KitapHareketleri">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kitapID" Type="Int32" Nullable="false" />
+    <Property Name="kullaniciID" Type="Int32" Nullable="false" />
+    <Property Name="alisTarihi" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="verisTarihi" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="tbl_Kullanicilar" Relationship="Self.fk_kullaniciID" FromRole="tbl_KitapHareketleri" ToRole="tbl_Kullanicilar" />
+  </EntityType>
+  <EntityType Name="tbl_Kitaplar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="resimUrl" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="kitapTuruID" Type="Int32" Nullable="false" />
+    <Property Name="yazarID" Type="Int32" Nullable="false" />
+    <Property Name="iadeTarihi" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="durumu" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="tbl_kitapBilgileri" Relationship="Self.fk_kitapID2" FromRole="tbl_Kitaplar" ToRole="tbl_kitapBilgileri" />
+    <NavigationProperty Name="tbl_KitapTakip" Relationship="Self.fk_kitapID" FromRole="tbl_Kitaplar" ToRole="tbl_KitapTakip" />
+    <NavigationProperty Name="tbl_kitapTurleri" Relationship="Self.fk_kitapTuruID" FromRole="tbl_Kitaplar" ToRole="tbl_kitapTurleri" />
+    <NavigationProperty Name="tbl_yazarlar" Relationship="Self.fk_yazarID" FromRole="tbl_Kitaplar" ToRole="tbl_yazarlar" />
+  </EntityType>
+  <EntityType Name="tbl_KitapTakip">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kitapID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="tbl_Kitaplar" Relationship="Self.fk_kitapID" FromRole="tbl_KitapTakip" ToRole="tbl_Kitaplar" />
+  </EntityType>
+  <EntityType Name="tbl_kitapTurleri">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ustID" Type="Int32" />
+    <Property Name="iconHtml" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_Kitaplar" Relationship="Self.fk_kitapTuruID" FromRole="tbl_kitapTurleri" ToRole="tbl_Kitaplar" />
+  </EntityType>
+  <EntityType Name="tbl_Kullanicilar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="kullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="resimUrl" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="tckn" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+    <Property Name="sifre" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cinsiyet" Type="Boolean" />
+    <Property Name="dogumTarihi" Type="DateTime" Precision="3" />
+    <Property Name="kayitTarihi" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="cepTelefonu" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="evTelefonu" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="eposta" Type="String" MaxLength="40" FixedLength="false" Unicode="true" />
+    <Property Name="adresID" Type="Int32" Nullable="false" />
+    <Property Name="rolID" Type="Int32" Nullable="false" />
+    <Property Name="durum" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="adres" Relationship="Self.fk_adresID2" FromRole="tbl_Kullanicilar" ToRole="adres" />
+    <NavigationProperty Name="tbl_KitapHareketleri" Relationship="Self.fk_kullaniciID" FromRole="tbl_Kullanicilar" ToRole="tbl_KitapHareketleri" />
+    <NavigationProperty Name="tbl_roller" Relationship="Self.fk_rolID" FromRole="tbl_Kullanicilar" ToRole="tbl_roller" />
+  </EntityType>
+  <EntityType Name="tbl_roller">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="tbl_Kullanicilar" Relationship="Self.fk_rolID" FromRole="tbl_roller" ToRole="tbl_Kullanicilar" />
+  </EntityType>
+  <EntityType Name="tbl_YayinEvleri">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="adresID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="adres" Relationship="Self.fk_adresID" FromRole="tbl_YayinEvleri" ToRole="adres" />
+  </EntityType>
+  <EntityType Name="tbl_yazarlar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="soyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="tbl_Kitaplar" Relationship="Self.fk_yazarID" FromRole="tbl_yazarlar" ToRole="tbl_Kitaplar" />
+  </EntityType>
+  <Association Name="fk_adresID">
+    <End Role="adres" Type="Self.adres" Multiplicity="1" />
+    <End Role="tbl_YayinEvleri" Type="Self.tbl_YayinEvleri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="adres">
+        <PropertyRef Name="adresID" />
+      </Principal>
+      <Dependent Role="tbl_YayinEvleri">
+        <PropertyRef Name="adresID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_adresID2">
+    <End Role="adres" Type="Self.adres" Multiplicity="1" />
+    <End Role="tbl_Kullanicilar" Type="Self.tbl_Kullanicilar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="adres">
+        <PropertyRef Name="adresID" />
+      </Principal>
+      <Dependent Role="tbl_Kullanicilar">
+        <PropertyRef Name="adresID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ilce_sehir1">
+    <End Role="sehir" Type="Self.sehir" Multiplicity="0..1" />
+    <End Role="ilce" Type="Self.ilce" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sehir">
+        <PropertyRef Name="sehirID" />
+      </Principal>
+      <Dependent Role="ilce">
+        <PropertyRef Name="sehirID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_mahalle_ilce1">
+    <End Role="ilce" Type="Self.ilce" Multiplicity="0..1" />
+    <End Role="mahalle" Type="Self.mahalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ilce">
+        <PropertyRef Name="ilceID" />
+      </Principal>
+      <Dependent Role="mahalle">
+        <PropertyRef Name="ilceID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_kitapID2">
+    <End Role="tbl_Kitaplar" Type="Self.tbl_Kitaplar" Multiplicity="1" />
+    <End Role="tbl_kitapBilgileri" Type="Self.tbl_kitapBilgileri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Kitaplar">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbl_kitapBilgileri">
+        <PropertyRef Name="kitapID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_kullaniciID">
+    <End Role="tbl_Kullanicilar" Type="Self.tbl_Kullanicilar" Multiplicity="1" />
+    <End Role="tbl_KitapHareketleri" Type="Self.tbl_KitapHareketleri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Kullanicilar">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbl_KitapHareketleri">
+        <PropertyRef Name="kullaniciID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_kitapID">
+    <End Role="tbl_Kitaplar" Type="Self.tbl_Kitaplar" Multiplicity="1" />
+    <End Role="tbl_KitapTakip" Type="Self.tbl_KitapTakip" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_Kitaplar">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbl_KitapTakip">
+        <PropertyRef Name="kitapID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_kitapTuruID">
+    <End Role="tbl_kitapTurleri" Type="Self.tbl_kitapTurleri" Multiplicity="1" />
+    <End Role="tbl_Kitaplar" Type="Self.tbl_Kitaplar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_kitapTurleri">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbl_Kitaplar">
+        <PropertyRef Name="kitapTuruID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_yazarID">
+    <End Role="tbl_yazarlar" Type="Self.tbl_yazarlar" Multiplicity="1" />
+    <End Role="tbl_Kitaplar" Type="Self.tbl_Kitaplar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_yazarlar">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbl_Kitaplar">
+        <PropertyRef Name="yazarID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_rolID">
+    <End Role="tbl_roller" Type="Self.tbl_roller" Multiplicity="1" />
+    <End Role="tbl_Kullanicilar" Type="Self.tbl_Kullanicilar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_roller">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="tbl_Kullanicilar">
+        <PropertyRef Name="rolID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="vt_KutuphaneEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="adres" EntityType="Self.adres" />
+    <EntitySet Name="ilce" EntityType="Self.ilce" />
+    <EntitySet Name="mahalle" EntityType="Self.mahalle" />
+    <EntitySet Name="sehir" EntityType="Self.sehir" />
+    <EntitySet Name="tbl_duyurular" EntityType="Self.tbl_duyurular" />
+    <EntitySet Name="tbl_istatislik" EntityType="Self.tbl_istatislik" />
+    <EntitySet Name="tbl_kitapBilgileri" EntityType="Self.tbl_kitapBilgileri" />
+    <EntitySet Name="tbl_KitapHareketleri" EntityType="Self.tbl_KitapHareketleri" />
+    <EntitySet Name="tbl_Kitaplar" EntityType="Self.tbl_Kitaplar" />
+    <EntitySet Name="tbl_KitapTakip" EntityType="Self.tbl_KitapTakip" />
+    <EntitySet Name="tbl_kitapTurleri" EntityType="Self.tbl_kitapTurleri" />
+    <EntitySet Name="tbl_Kullanicilar" EntityType="Self.tbl_Kullanicilar" />
+    <EntitySet Name="tbl_roller" EntityType="Self.tbl_roller" />
+    <EntitySet Name="tbl_YayinEvleri" EntityType="Self.tbl_YayinEvleri" />
+    <EntitySet Name="tbl_yazarlar" EntityType="Self.tbl_yazarlar" />
+    <AssociationSet Name="fk_adresID" Association="Self.fk_adresID">
+      <End Role="adres" EntitySet="adres" />
+      <End Role="tbl_YayinEvleri" EntitySet="tbl_YayinEvleri" />
+    </AssociationSet>
+    <AssociationSet Name="fk_adresID2" Association="Self.fk_adresID2">
+      <End Role="adres" EntitySet="adres" />
+      <End Role="tbl_Kullanicilar" EntitySet="tbl_Kullanicilar" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ilce_sehir1" Association="Self.FK_ilce_sehir1">
+      <End Role="sehir" EntitySet="sehir" />
+      <End Role="ilce" EntitySet="ilce" />
+    </AssociationSet>
+    <AssociationSet Name="FK_mahalle_ilce1" Association="Self.FK_mahalle_ilce1">
+      <End Role="ilce" EntitySet="ilce" />
+      <End Role="mahalle" EntitySet="mahalle" />
+    </AssociationSet>
+    <AssociationSet Name="fk_kitapID2" Association="Self.fk_kitapID2">
+      <End Role="tbl_Kitaplar" EntitySet="tbl_Kitaplar" />
+      <End Role="tbl_kitapBilgileri" EntitySet="tbl_kitapBilgileri" />
+    </AssociationSet>
+    <AssociationSet Name="fk_kullaniciID" Association="Self.fk_kullaniciID">
+      <End Role="tbl_Kullanicilar" EntitySet="tbl_Kullanicilar" />
+      <End Role="tbl_KitapHareketleri" EntitySet="tbl_KitapHareketleri" />
+    </AssociationSet>
+    <AssociationSet Name="fk_kitapID" Association="Self.fk_kitapID">
+      <End Role="tbl_Kitaplar" EntitySet="tbl_Kitaplar" />
+      <End Role="tbl_KitapTakip" EntitySet="tbl_KitapTakip" />
+    </AssociationSet>
+    <AssociationSet Name="fk_kitapTuruID" Association="Self.fk_kitapTuruID">
+      <End Role="tbl_kitapTurleri" EntitySet="tbl_kitapTurleri" />
+      <End Role="tbl_Kitaplar" EntitySet="tbl_Kitaplar" />
+    </AssociationSet>
+    <AssociationSet Name="fk_yazarID" Association="Self.fk_yazarID">
+      <End Role="tbl_yazarlar" EntitySet="tbl_yazarlar" />
+      <End Role="tbl_Kitaplar" EntitySet="tbl_Kitaplar" />
+    </AssociationSet>
+    <AssociationSet Name="fk_rolID" Association="Self.fk_rolID">
+      <End Role="tbl_roller" EntitySet="tbl_roller" />
+      <End Role="tbl_Kullanicilar" EntitySet="tbl_Kullanicilar" />
+    </AssociationSet>
+    <EntitySet Name="sysdiagrams" EntityType="vt_KutuphaneModel.sysdiagrams" />
+  </EntityContainer>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+</Schema>

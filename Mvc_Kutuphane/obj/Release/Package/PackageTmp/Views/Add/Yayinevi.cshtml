@@ -1,0 +1,72 @@
+﻿@model Mvc_Kutuphane.Models.tbl_yayinEvi
+
+@{
+    ViewBag.Title = "Yayinevi";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+@using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "gelenSonuc", InsertionMode = InsertionMode.Replace }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+    <div class="form-group">
+        @Html.TextBoxFor(m => m.ad, new { @class = "form-control input-lg", @placeholder = "Yayın Evinin Adını Giriniz..." })
+    </div>
+    <div class="form-group">
+        @Html.TextBoxFor(m => m.detay, new { @class = "form-control input-lg", @placeholder = "Yayın Evi Hakkında Detayları Giriniz..." })
+
+
+    </div>
+    <div class="form-group">
+        @Html.TextBoxFor(m => m.aciklama, new { @class = "form-control input-lg", @placeholder = "Eklemek İstediğiniz Açıklamaları Yazınız..." })
+
+
+    </div>
+    
+    <div class="form-group">
+        <button class="btn btn-block btn-custom">Kaydet</button>
+    </div>
+}
+<div id="gelenSonuc">
+
+</div>
+<center><h3>Aşağıda Eklenmiş Tüm Yayın Evlerini Görmektesiniz</h3></center>
+<p></p>
+<table class="table">
+    <tr>
+        <th>
+          <center>İsmi</center> 
+        </th>
+        <th>
+          <center>@Html.DisplayNameFor(model => model.aciklama)</center> 
+        </th>
+        <th>
+         <center>@Html.DisplayNameFor(model => model.detay)</center>  
+        </th>
+        <th>
+            <center>  Resim</center>  
+</th>
+        
+        
+    </tr>
+
+    @foreach (Mvc_Kutuphane.Models.tbl_yayinEvi item in ViewBag.Basar)
+    {
+        <tr>
+            <td>
+              <center>@Html.DisplayFor(Model => item.ad)</center> 
+            </td>
+            <td>
+                <center> @Html.DisplayFor(Model => item.aciklama)</center> 
+</td>
+            <td>
+                <center>  @Html.DisplayFor(Model => item.detay)</center> 
+</td>
+            <td>
+                <center><img src="@Html.DisplayFor(Model => item.resimUrl)" width="64" height="79">   </center>
+            </td>
+        </tr>
+    }
+
+</table>
+

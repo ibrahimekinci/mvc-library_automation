@@ -1,0 +1,184 @@
+﻿
+@{
+    ViewBag.Title = "Profil";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+@model Mvc_Kutuphane.Models.tbl_kullanici
+<h1>
+    @ViewBag.Title
+</h1>
+@*<form accept-charset="utf-8" method="post"  id="UserProfileForm" class="form-horizontal">*@
+@using (Html.BeginForm())
+{        @Html.ValidationSummary()
+    <div class="form-group">
+        <label class="col-sm-3 control-label"></label>
+        <div class="col-sm-9">
+            <h2 style="color:green;">  @ViewBag.Mesaj</h2>
+            <span class="help-block"></span>
+        </div>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Kullanıcı Adı</label>
+                <div class="col-sm-9">
+                    @Html.TextBoxFor(x => x.kadi, new { required = "required", maxlength = "100", value = "Kullanıcı Adı", @class = "form-control" })
+                    @*<input type="text" required="required" value="Kullanıcı Adı" maxlength="100" class="form-control" readonly>*@
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Email</label>
+                <div class="col-sm-9">
+                    @Html.TextBoxFor(x => x.eposta, new { required = "required", maxlength = "100", value = "example@gmail.com", @class = "form-control" })
+                    @*<input type="email" required="required" value="example@gmail.com" maxlength="100" class="form-control" readonly>*@
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">TCKN</label>
+                <div class="col-sm-9">
+                    @Html.TextBoxFor(x => x.tckn, new { maxlength = "100", value = "example@gmail.com", @class = "form-control" })
+                    @*<input type="text" required="required" value="Kullanıcı Adı" maxlength="100" class="form-control" readonly>*@
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Ad</label>
+                <div class="col-sm-9">
+                    @Html.TextBoxFor(x => x.ad, new { maxlength = "100", value = "Ad", @class = "form-control" })
+                    @*<input type="text" required="required" value="" class="form-control">*@
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Soyad</label>
+                <div class="col-sm-9">
+                    @Html.TextBoxFor(x => x.soyad, new { maxlength = "100", value = "soyad", @class = "form-control" })
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Cinsiyet</label>
+                <div class="col-sm-9">
+                    @Html.RadioButtonFor(model => model.cinsiyet, "true")
+                    @Html.Label("Erkek")
+                    @Html.RadioButtonFor(model => model.cinsiyet, "false")
+                    @Html.Label("Kadın")
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Ev Telefon</label>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <input type="text" id="evTelefonu" name="evTelefonu" value='@Model.evTelefonu' class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
+                    </div><!-- /.input group -->
+                    @*@Html.TextBoxFor(x => x.evTelefonu, new { maxlength = "100", value = "soyad", @class = "form-control" })*@
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Cep Telefon</label>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <input type="text" id="cepTelefonu" name="cepTelefonu" value='@Model.cepTelefonu' class="form-control" data-inputmask='"mask": "(999) 999-9999"' data-mask>
+                    </div><!-- /.input group -->
+                    @*@Html.TextBoxFor(x => x.cepTelefonu, new { maxlength = "100", value = "soyad", @class = "form-control" })*@
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Doğum Tarihi</label>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <input type="text" id="dogumTarihi" name="dogumTarihi" value='@Model.dogumTarihi' class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask>
+                    </div><!-- /.input group -->
+                    @*@Html.TextBoxFor(x => x.cepTelefonu, new { maxlength = "100", value = "soyad", @class = "form-control" })*@
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <label class="col-sm-3 control-label">Şifre</label>
+                <div class="col-sm-9">
+                    @Html.PasswordFor(x => x.sifre, new { required = "required", width = "100", @class = "form-control" })
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="panel-footer">
+        <div class="row">
+            <div class="col-sm-offset-3 col-sm-9">
+                <button type="submit" class="btn btn-custom"><i class="fa fa-save"></i> Profilimi Güncelle</button>
+                <a href='@Url.Action("index","Account")' type="button" class="btn btn-default"><i class="fa fa-close"></i> Vazgeç</a>
+            </div>
+        </div>
+    </div>
+}
+
+@section script {
+    @*<script src="~/assets/plugins/maks/js/jQuery-2.1.4.min.js"></script>
+        <script src="~/assets/plugins/maks/js/bootstrap.min.js"></script>*@
+    <script src="~/assets/plugins/maks/js/select/select2.full.min.js"></script>
+    <script src="~/assets/plugins/maks/js/jquery.inputmask.js"></script>
+    <script src="~/assets/plugins/maks/js/jquery.inputmask.date.extensions.js"></script>
+
+    <script>
+        $(function () {
+            //Initialize Select2 Elements
+            $(".select2").select2();
+
+            //Datemask dd/mm/yyyy
+            $("#datemask").inputmask("dd/mm/yyyy", { "placeholder": "dd/mm/yyyy" });
+            //Datemask2 mm/dd/yyyy
+            $("#datemask2").inputmask("mm/dd/yyyy", { "placeholder": "mm/dd/yyyy" });
+            //Money Euro
+            $("[data-mask]").inputmask();
+
+            //Date range picker
+            $('#reservation').daterangepicker();
+            //Date range picker with time picker
+            $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A' });
+            //Date range as a button
+            $('#daterange-btn').daterangepicker(
+                {
+                    ranges: {
+                        'Today': [moment(), moment()],
+                        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                        'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                        'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                        'This Month': [moment().startOf('month'), moment().endOf('month')],
+                        'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                    },
+                    startDate: moment().subtract(29, 'days'),
+                    endDate: moment()
+                },
+            function (start, end) {
+                $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+            }
+            );
+        });
+    </script>
+
+}

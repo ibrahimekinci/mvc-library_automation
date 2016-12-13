@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<section class="hero">
+    <div class="container text-center">
+        <h2 class="hero-title">Haydi vakit kaybetmeden aradığın kitabı bul...</h2>
+        <p class="hero-description hidden-xs">Aradığınız binlerce kitap burada.</p>
+        <div class="row hero-search-box">
+            @using (Html.BeginForm())
+            {
+                <div class="col-md-4 col-sm-4 search-input">
+                    <input type="text" name="aranan" id="aranan" class="form-control input-lg search-first" placeholder="Aranan">
+                </div>
+                <div class="col-md-4 col-sm-4 search-input">
+       
+                    <select name="aramaKriteri" id="aramaKriteri" class="form-control input-lg search-second">
+                            <option selected="" value="kitap">Kitap Adına'göre</option>
+                            <option value="yazar">Yazar Adına'göre</option>
+                            <option value="kitapevi">Kitapevi 'göre</option>
+                            <option value="tur">Türe ''göre</option>
+                        </select>
+                </div>
+                <div class="col-md-4 col-sm-4 search-input">
+                    <button type="submit" class="btn btn-custom btn-block btn-lg"><i class="fa fa-search"></i></button>
+                </div>
+            }
+        </div>
+    </div>
+</section>

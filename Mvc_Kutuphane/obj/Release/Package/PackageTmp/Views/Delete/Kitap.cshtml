@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Mvc_Kutuphane.Models.tbl_kitap>
+
+@{
+    Layout = null;
+}
+
+@{
+    ViewBag.Title = "Kitap";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+
+
+@using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "gelenSonuc", InsertionMode = InsertionMode.Replace }))
+{ }
+
+
+<table class="table">
+    <tr>
+        <th>
+            <center> Adı</center>
+        </th>
+        <th>
+            <center>  Kitap Türü</center>
+        </th>
+        <th>
+            <center> Yayın Evi</center>
+        </th>
+        <th>
+            <center> Yazarı</center>
+        </th>
+
+        <th>
+            <center>  Detaylar</center>
+        </th>
+        <th>
+            <center>  Resmi</center>
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <center>   @Html.DisplayFor(modelItem => item.ad)</center>
+            </td>
+            <td>
+                <center>  @Html.DisplayFor(modelItem => item.kitapTur.ad)</center>
+            </td>
+            <td>
+                <center> @Html.DisplayFor(modelItem => item.yayinEvi.ad)</center>
+            </td>
+            <td>
+                <center> @Html.DisplayFor(modelItem => item.yazar.ad)</center>
+            </td>
+
+            <td>
+                <center>  @Html.DisplayFor(modelItem => item.detay)</center>
+            </td>
+            <td>
+                <center> <img src="@Html.DisplayFor(modelItem => item.resimUrl)" width="64" height="79"> 
+ </center>
+            </td>
+            <td>
+               @Html.ActionLink("Sil", "DelKitap", new { id = item.ID })
+
+            </td>
+        </tr>
+    }
+
+</table>
+

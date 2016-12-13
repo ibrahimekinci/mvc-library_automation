@@ -1,0 +1,53 @@
+﻿@{
+    Layout = "~/Views/shared/_Layout.cshtml";
+    ViewBag.Title = "Leaf Solutions | Arama Sonuçları";
+    ViewBag.Description = "Leaf Solutions arama sonuçları sayfası";
+    ViewBag.Keywords = "leaf, solutions, arama, sonuçları, sayfası";
+}
+
+<style>
+    #search-result {
+        padding: 20px;
+        color: black !important;
+        border-radius: 26px;
+        text-shadow: none;
+    }
+</style>
+<section class="main">
+    <div class="container">
+        <div class="row">
+                <div class="panel panel-default">
+                    <div class="widget-header">
+                        <h3>Arama Sonuçları</h3>
+                    </div>
+                    <div id="search-result"></div>
+
+                    @section scripts{
+                        <script src="http://www.google.com/jsapi"></script>
+                        <script type="text/javascript">
+                            google.load('search', '1');
+                            function OnLoad() {
+                                var s = window.location.search;
+                                if (s.indexOf('search=') >= 0) {
+                                    s = s.substring(s.indexOf('search=') + 7);
+                                    if (s.indexOf('&') >= 0) {
+                                        s = s.substring(0, s.indexOf('&'));
+                                    }
+                                    s = decodeURIComponent(s.replace('+', ' '));
+                                }
+                                else {
+                                    s = "";
+                                }
+                                var customSearchControl = new google.search.CustomSearchControl('005012893692166425623:_jh5-w7dpvs');
+                                customSearchControl.draw('search-result');
+                                customSearchControl.execute(s);
+
+                            }
+                            google.setOnLoadCallback(OnLoad);
+                        </script>
+                    }
+
+                </div>
+            </div>
+        </div>
+</section>

@@ -1,0 +1,59 @@
+﻿@model Mvc_Kutuphane.Models.tbl_yazar
+@{
+    ViewBag.Title = "Yazar";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+@using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "gelenSonuc", InsertionMode = InsertionMode.Replace }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+    <div class="form-group">
+        @Html.TextBoxFor(m => m.ad, new { @class = "form-control input-lg", @placeholder = "Adı" })
+    </div>
+    <div class="form-group">
+        @Html.TextBoxFor(m => m.soyad, new { @class = "form-control input-lg", @placeholder = "Soyadı" })
+    </div>
+    <div class="form-group">
+        @Html.TextBoxFor(m => m.dogumTarihi, new { @class = "form-control input-lg", @placeholder = "Doğum Tarihi" })
+    </div>
+    <div class="form-group">
+        <button class="btn btn-block btn-custom">Kaydet</button>
+    </div>
+}
+<div id="gelenSonuc">
+
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            <center>  Adı</center>
+        </th>
+        <th>
+            <center> Soy Adı</center>
+</th>
+        <th>
+            <center>  Doğum Tarihi</center>
+</th>
+       
+        <th></th>
+    </tr>
+
+    @foreach (Mvc_Kutuphane.Models.tbl_yazar item in ViewBag.Basar)
+    {
+        <tr>
+            <td>
+                <center>  @Html.DisplayFor(modelItem => item.ad)</center>
+            </td>
+            <td>
+                <center>  @Html.DisplayFor(modelItem => item.soyad)</center>
+            </td>
+            <td>
+                <center>  @Html.DisplayFor(modelItem => item.dogumTarihi)</center>
+            </td>
+            
+        </tr>
+    }
+
+
+</table>

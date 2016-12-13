@@ -1,0 +1,340 @@
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\csc.exe
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\System.Collections.Immutable.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\System.Reflection.Metadata.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\vbc.exe
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\VBCSCompiler.exe
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\VBCSCompiler.exe.config
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.dll.config
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.pdb
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\EntityFramework.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\EntityFramework.SqlServer.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\Microsoft.Web.Infrastructure.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Helpers.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Mvc.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Razor.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Deployment.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Razor.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\EntityFramework.xml
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\EntityFramework.SqlServer.xml
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Razor.xml
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.xml
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Deployment.xml
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Razor.xml
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Helpers.xml
+C:\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Mvc.xml
+C:\Mvc_Kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.csprojResolveAssemblyReference.cache
+C:\Mvc_Kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.dll
+C:\Mvc_Kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.pdb
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.csprojResolveAssemblyReference.cache
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.pdb
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\roslyn\csc.exe
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\roslyn\System.Collections.Immutable.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\roslyn\System.Reflection.Metadata.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\roslyn\vbc.exe
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\roslyn\VBCSCompiler.exe
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\roslyn\VBCSCompiler.exe.config
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.dll.config
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.pdb
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\EntityFramework.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\EntityFramework.SqlServer.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\Microsoft.Web.Infrastructure.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Helpers.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Mvc.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Razor.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Deployment.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Razor.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\EntityFramework.xml
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\EntityFramework.SqlServer.xml
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Razor.xml
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.xml
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Deployment.xml
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Razor.xml
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Helpers.xml
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Mvc.xml
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\Newtonsoft.Json.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Net.Http.Formatting.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Http.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Http.WebHost.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\Newtonsoft.Json.xml
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Net.Http.Formatting.xml
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Http.xml
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\System.Web.Http.WebHost.xml
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\roslyn\csc.exe
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\roslyn\vbc.exe
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\roslyn\VBCSCompiler.exe
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\Mvc_Kutuphane.dll.config
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\Mvc_Kutuphane.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\Mvc_Kutuphane.pdb
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\EntityFramework.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\EntityFramework.SqlServer.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\Newtonsoft.Json.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Net.Http.Formatting.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Helpers.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Http.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Http.WebHost.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Mvc.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Razor.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Webpages.Deployment.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Webpages.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Webpages.Razor.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\EntityFramework.xml
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\EntityFramework.SqlServer.xml
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\Newtonsoft.Json.xml
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Net.Http.Formatting.xml
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Http.xml
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Http.WebHost.xml
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Razor.xml
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Webpages.xml
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Webpages.Deployment.xml
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Webpages.Razor.xml
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Helpers.xml
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\System.Web.Mvc.xml
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.csprojResolveAssemblyReference.cache
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.pdb
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\bin\en\Mvc_Kutuphane.resources.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.csproj.GenerateResource.Cache
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\obj\Debug\en\Mvc_Kutuphane.resources.dll
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.Resources.lang.resources
+C:\Users\necla\Documents\k-t-phane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.Resources.lang.en.resources
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\bin\en\Mvc_Kutuphane.resources.dll
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.Resources.lang.resources
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.Resources.lang.en.resources
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.csproj.GenerateResource.Cache
+D:\_\_Univercity\Projeler\kutuphane\Mvc_Kutuphane\obj\Debug\en\Mvc_Kutuphane.resources.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\roslyn\csc.exe
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\roslyn\System.Collections.Immutable.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\roslyn\System.Reflection.Metadata.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\roslyn\vbc.exe
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\roslyn\VBCSCompiler.exe
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\roslyn\VBCSCompiler.exe.config
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\Mvc_Kutuphane.dll.config
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\Mvc_Kutuphane.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\Mvc_Kutuphane.pdb
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\en\Mvc_Kutuphane.resources.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\EntityFramework.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\EntityFramework.SqlServer.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\Microsoft.Web.Infrastructure.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\Newtonsoft.Json.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Net.Http.Formatting.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Helpers.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Http.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Http.WebHost.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Mvc.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Razor.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Webpages.Deployment.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Webpages.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Webpages.Razor.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\EntityFramework.xml
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\EntityFramework.SqlServer.xml
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\Newtonsoft.Json.xml
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Net.Http.Formatting.xml
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Http.xml
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Http.WebHost.xml
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Razor.xml
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Webpages.xml
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Webpages.Deployment.xml
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Webpages.Razor.xml
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Helpers.xml
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\bin\System.Web.Mvc.xml
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.csprojResolveAssemblyReference.cache
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.Resources.lang.resources
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.Resources.lang.en.resources
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.csproj.GenerateResource.Cache
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\obj\Debug\en\Mvc_Kutuphane.resources.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.dll
+D:\_\_Univercity\Projeler\kutuphane - Kopya\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.pdb
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\csc.exe
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\desktop.ini
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\vbc.exe
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\VBCSCompiler.exe
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.dll.config
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.pdb
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\en\Mvc_Kutuphane.resources.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\EntityFramework.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\EntityFramework.SqlServer.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Newtonsoft.Json.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Net.Http.Formatting.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Helpers.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Http.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Http.WebHost.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Mvc.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Razor.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Deployment.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Razor.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\EntityFramework.xml
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\EntityFramework.SqlServer.xml
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Newtonsoft.Json.xml
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Net.Http.Formatting.xml
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Http.xml
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Http.WebHost.xml
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Razor.xml
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.xml
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Deployment.xml
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Razor.xml
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Helpers.xml
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Mvc.xml
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.csprojResolveAssemblyReference.cache
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.Resources.lang.resources
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.Resources.lang.en.resources
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.csproj.GenerateResource.Cache
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\obj\Debug\en\Mvc_Kutuphane.resources.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.dll
+C:\Users\ibrahim Ekinci\Desktop\project\proje\mvc_kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.pdb
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\csc.exe
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\desktop.ini
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\System.Collections.Immutable.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\System.Reflection.Metadata.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\vbc.exe
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\VBCSCompiler.exe
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\roslyn\VBCSCompiler.exe.config
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.dll.config
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.pdb
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\en\Mvc_Kutuphane.resources.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\EntityFramework.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\EntityFramework.SqlServer.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Microsoft.Web.Infrastructure.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Newtonsoft.Json.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Net.Http.Formatting.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Helpers.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Http.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Http.WebHost.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Mvc.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Razor.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Deployment.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Razor.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\EntityFramework.xml
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\EntityFramework.SqlServer.xml
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\Newtonsoft.Json.xml
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Net.Http.Formatting.xml
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Http.xml
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Http.WebHost.xml
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Razor.xml
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.xml
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Deployment.xml
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Razor.xml
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Helpers.xml
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\bin\System.Web.Mvc.xml
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.csprojResolveAssemblyReference.cache
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.Resources.lang.resources
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.Resources.lang.en.resources
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.csproj.GenerateResource.Cache
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\obj\Debug\en\Mvc_Kutuphane.resources.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.dll
+D:\Drive_B141210303\Jobs\project\proje\mvc_kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.pdb
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\csc.exe
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\desktop.ini
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\System.Collections.Immutable.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\System.Reflection.Metadata.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\vbc.exe
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\VBCSCompiler.exe
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\roslyn\VBCSCompiler.exe.config
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.dll.config
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\Mvc_Kutuphane.pdb
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\en\Mvc_Kutuphane.resources.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\EntityFramework.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\EntityFramework.SqlServer.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\Microsoft.Web.Infrastructure.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\Newtonsoft.Json.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Net.Http.Formatting.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Helpers.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Http.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Http.WebHost.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Mvc.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Razor.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Deployment.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Razor.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\EntityFramework.xml
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\EntityFramework.SqlServer.xml
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\Newtonsoft.Json.xml
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Net.Http.Formatting.xml
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Http.xml
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Http.WebHost.xml
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Razor.xml
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.xml
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Deployment.xml
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Webpages.Razor.xml
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Helpers.xml
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\bin\System.Web.Mvc.xml
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.csprojResolveAssemblyReference.cache
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.Resources.lang.resources
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.Resources.lang.en.resources
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.csproj.GenerateResource.Cache
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\obj\Debug\en\Mvc_Kutuphane.resources.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.dll
+D:\Drive_B141210303\Jobs\project\Mvc_Kutuphane\Mvc_Kutuphane\obj\Debug\Mvc_Kutuphane.pdb

@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Fotoğraf Yükle";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+<h1>
+    @ViewBag.Title
+</h1>
+<div class="container">
+    <div class="form-group">
+        <label class="col-sm-3 control-label"></label>
+        <div class="col-sm-9">
+            <h2 style="color:green;">  @ViewBag.Mesaj</h2>
+            <span class="help-block"></span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-sm-8">
+            <img src='@ViewBag.resimUrl' style="float:none; min-height:250px; max-width:500px;" />
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col-md-8 col-sm-8">
+               @using (Html.BeginForm("FotografYukle", "Account", FormMethod.Post, new { enctype = "multipart/form-data" }))
+               {
+                @Html.ValidationMessage("")
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">Fotoğraf</label>
+                        <div class="col-sm-9">
+
+                            <input type="file" name="FileResim" class="filestyle">
+                            <span class="help-block"></span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-custom"><i class="fa fa-save"></i> Fotoğrafı Yükle</button>
+                }
+            </div>
+        </div>
+    </div>

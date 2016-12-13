@@ -1,0 +1,134 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{Html.RenderAction("_banner", "Account");}
+@section stil {@RenderSection("stil", false)}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 col-md-3">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <span class="glyphicon glyphicon-user">
+                                </span>Hesap
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <a href="~/Account/FotografYukle">Fotoğraf Yükle</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="~/Account">Profili GÜncelle</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="~/Account/sifreyiDegistir">Şifre Değiştir</a>
+                                    </td>
+                                </tr>
+                                @*<tr>
+                                    <td>
+                                        <a href="~/Account/sifreyiDegistir">Adres Bilgileri</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="~/Account/Bildirimler">Bildirimler</a> <span class="label label-info">5</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="~/Account/KitapSepet">Kitap Sepetim</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a href="~/Account/KitapGecmis">Kitap Geçmişim</a>
+                                    </td>
+                                </tr>*@
+                                @*<tr>
+                                    <td>
+                                        <span class="glyphicon glyphicon-trash text-danger"></span><a href="~/Account/HesapSil" class="text-danger">
+                                            Hesabı Sil
+                                        </a>
+                                    </td>
+                                </tr>*@
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                @if (Session["user"] != null && Session["yetki"] != null)
+                {
+                    string yetki = Session["yetki"].ToString();
+                    int siraTut = 0;
+                    string[] accordionSira = { "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten" };
+                    foreach (var item in yetki.Split(';'))
+                    {
+                        siraTut++;
+                        string accordionHref = "collapse" + accordionSira[siraTut];
+                        string[] items = item.Split(',');
+                        if (items.Count() > 1)
+                        {
+                          
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#@accordionHref">
+                                            <span class="glyphicon glyphicon-folder-close">
+                                            </span>@items[0]
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="@accordionHref" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <table class="table">
+                                            @for (int i = 1; i < items.Count(); i++)
+                                            {
+                                                <tr>
+                                                    <td>
+                                                        <span class="glyphicon glyphicon-pencil text-primary"></span>
+                                                        @switch (items[i])
+                                                        {
+                                                            default:
+                                                                break;
+                                                            case "add":
+                                                                <a href="~/Add/@items[0]">Ekle</a>
+                                                                break;
+                                                            case "delete":
+                                                                <a href="~/Delete/@items[0]">Sil</a>
+                                                                break;
+                                                            case "update":
+                                                                <a href="~/Update/@items[0]">Guncelle</a>
+                                                                break;
+                                                        }
+                                                    </td>
+                                                </tr>
+                                            }
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                }
+            </div>
+        </div>
+        <div class="col-sm-9 col-md-9">
+            <div class="well">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</div>
+@section script{@RenderSection("script", false)}

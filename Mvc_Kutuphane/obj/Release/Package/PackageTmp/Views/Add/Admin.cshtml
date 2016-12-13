@@ -1,0 +1,155 @@
+﻿@model Mvc_Kutuphane.Models.tbl_kullanici
+
+
+@{
+    ViewBag.Title = "Admin";
+    Layout = "~/Views/Shared/_LayoutAccount.cshtml";
+}
+@using (Ajax.BeginForm(new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "gelenSonuc", InsertionMode = InsertionMode.Replace }))
+{ }
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-horizontal">
+            <center><h3>Kullanıcı ve Yöneticilik Kontrolü</h3></center><hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+              Kullanıcı Adı
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.kadi, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.kadi, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+               Resim 
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.resimUrl, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.resimUrl, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+               TC Kimlik No
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.tckn, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.tckn, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+               Geçici Şifre
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.sifre, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.sifre, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            
+            <div class="form-group">
+               Ad
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.ad, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.ad, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+               Soy Ad
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.soyad, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.soyad, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+               Cinsiyet
+                <div class="col-md-10">
+                    <div class="checkbox">
+                        @Html.EditorFor(model => model.cinsiyet)
+                        @Html.ValidationMessageFor(model => model.cinsiyet, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+               Doğum Tarihi
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.dogumTarihi, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.dogumTarihi, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+               Cep Telefonu
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.cepTelefonu, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.cepTelefonu, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                Ev Telefonu
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.evTelefonu, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.evTelefonu, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+            Eposta Adresi
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.eposta, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.eposta, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+            Rolü 
+                <div class="col-md-10">
+                    @Html.DropDownList("rolID", null, htmlAttributes: new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.rolID, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+         
+          
+        </div>
+    }
+
+   <table class="table">
+    <tr>
+        <th>
+            <center>   @Html.DisplayNameFor(model => model.rol.ad)</center>
+</th>
+        <th>
+            <center> @Html.DisplayNameFor(model => model.kadi)</center>
+</th>
+        <th>
+            <center> Resim</center>
+        </th>
+       
+    </tr>
+
+    @foreach (Mvc_Kutuphane.Models.tbl_kullanici item in ViewBag.Basar)
+    {
+        <tr>
+            <td>
+                <center>   @Html.DisplayFor(modelItem => item.rol.ad)</center>
+</td>
+            <td>
+                <center>@Html.DisplayFor(modelItem => item.kadi)</center>
+            </td>
+            <td>
+                <center> @Html.DisplayFor(modelItem => item.resimUrl)</center>
+</td>
+            
+            <td>
+                @Html.ActionLink("Düzenle", "EdKisiler", new { id = item.ID }) 
+            </td>
+        </tr>
+    }
+
+</table>
+

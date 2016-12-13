@@ -1,0 +1,185 @@
+﻿@model  List<Mvc_Kutuphane.Models.tbl_kitap>
+
+@{
+    Layout = null;
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="section-header">
+            <h2>En çok okunan kitaplar</h2>
+        </div>
+        <div id="featured-products" class="owl-carousel owl-carousel-featured">
+            @foreach (var item in Model)
+            {    <div class="item">
+                <div class="item-ads-grid">
+                    <div class="item-badge-grid featured-ads">
+                        <a href="#">@item.ad</a>
+                    </div>
+                    <div class="item-img-grid">
+                        <img alt="" src='@item.resimUrl' class="img-responsive img-center">
+                    </div>
+                    <div class="item-title">
+                       <a href='@Url.Action("KitapDetay", "Home", new {ID = item.ID })'><h4>@item.detay</h4></a>
+                    </div>
+                    <div class="item-meta">
+                        <ul>
+                            <li class="item-date"><i class="fa fa-clock-o"></i>@item.kayitTarihi</li>
+                            <li class="item-cat"><i class="fa fa-bars"></i> 
+                            @item.kitapTur.ad,@item.yazar.ad 
+                            </li>
+                            @*<li class="item-location"><a href="category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>*@
+                            <li class="item-type"><i class="fa fa-bookmark"></i>New</li>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                    
+                        <div class="item-action-grid pull-right">
+                            <ul>
+                                <li><a href="#" data-toggle="tooltip" data-placement="top" title="Sepete At" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
+                                <li><a href='@Url.Action("KitapDetay", "Home", new {ID = item.ID })' data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            }
+        
+
+            @*<div class="item">
+                <div class="item-ads-grid">
+                    <div class="item-badge-grid premium-ads">
+                        <a href="#">Featured Ads</a>
+                    </div>
+                    <div class="item-img-grid">
+                        <img alt="" src="~/assets/img/products/product-6.jpg" class="img-responsive img-center">
+                    </div>
+                    <div class="item-title">
+                        <a href="detail.html"><h4>Samsung Tab 3 V 116</h4></a>
+                    </div>
+                    <div class="item-meta">
+                        <ul>
+                            <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
+                            <li class="item-cat"><i class="fa fa-bars"></i> <a href="category.html">Electronics</a> , <a href="category.html">Smartphone</a></li>
+                            <li class="item-location"><a href="category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
+                            <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <div class="item-price-grid pull-left">
+                            <h3>$ 100</h3>
+                            <span>Negotiable</span>
+                        </div>
+                        <div class="item-action-grid pull-right">
+                            <ul>
+                                <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-ads-grid highlight-ads">
+                    <div class="item-img-grid">
+                        <img alt="" src="~/assets/img/products/product-7.jpg" class="img-responsive img-center">
+                    </div>
+                    <div class="item-title">
+                        <a href="detail.html"><h4>Sony Experia Z2 LTE</h4></a>
+                    </div>
+                    <div class="item-meta">
+                        <ul>
+                            <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
+                            <li class="item-cat"><i class="fa fa-bars"></i> <a href="category.html">Electronics</a> , <a href="category.html">Smartphone</a></li>
+                            <li class="item-location"><a href="category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
+                            <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <div class="item-price-grid pull-left">
+                            <h3>$ 100</h3>
+                            <span>Negotiable</span>
+                        </div>
+                        <div class="item-action-grid pull-right">
+                            <ul>
+                                <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-ads-grid">
+                    <div class="item-badge-grid hot-ads">
+                        <a href="#">Featured Ads</a>
+                    </div>
+                    <div class="item-img-grid">
+                        <img alt="" src="~/assets/img/products/product-1.jpg" class="img-responsive img-center">
+                    </div>
+                    <div class="item-title">
+                        <a href="detail.html"><h4>Lenovo A326 Black 4GB RAM</h4></a>
+                    </div>
+                    <div class="item-meta">
+                        <ul>
+                            <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
+                            <li class="item-cat"><i class="fa fa-bars"></i> <a href="category.html">Electronics</a> , <a href="category.html">Smartphone</a></li>
+                            <li class="item-location"><a href="category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
+                            <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <div class="item-price-grid pull-left">
+                            <h3>$ 100</h3>
+                            <span>Negotiable</span>
+                        </div>
+                        <div class="item-action-grid pull-right">
+                            <ul>
+                                <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-ads-grid">
+                    <div class="item-badge-grid featured-ads">
+                        <a href="#">Featured Ads</a>
+                    </div>
+                    <div class="item-img-grid">
+                        <img alt="" src="~/assets/img/products/product-1.jpg" class="img-responsive img-center">
+                    </div>
+                    <div class="item-title">
+                        <a href="detail.html"><h4>Lenovo A326 Black 4GB RAM</h4></a>
+                    </div>
+                    <div class="item-meta">
+                        <ul>
+                            <li class="item-date"><i class="fa fa-clock-o"></i> Today 10.35 am</li>
+                            <li class="item-cat"><i class="fa fa-bars"></i> <a href="category.html">Electronics</a> , <a href="category.html">Smartphone</a></li>
+                            <li class="item-location"><a href="category.html"><i class="fa fa-map-marker"></i> Manchester</a></li>
+                            <li class="item-type"><i class="fa fa-bookmark"></i> New</li>
+                        </ul>
+                    </div>
+                    <div class="product-footer">
+                        <div class="item-price-grid pull-left">
+                            <h3>$ 100</h3>
+                            <span>Negotiable</span>
+                        </div>
+                        <div class="item-action-grid pull-right">
+                            <ul>
+                                <li><a href="#" data-toggle="tooltip" data-placement="top" title="Save Favorite" class="btn btn-default btn-sm"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="detail.html" data-toggle="tooltip" data-placement="top" title="Show Details" class="btn btn-success btn-sm"><i class="fa fa-eye"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>*@
+        </div>
+    </div>
+</div>
